@@ -10,7 +10,7 @@ exports['test handlebars'] = function (assert, cb) {
   var inputFilename = path.join(__dirname, '..', 'inputs', 'example.handlebars');
   fs.readFile(inputFilename, "utf8", function (err, source) {
     var result = jsxgettext.generate.apply(jsxgettext, handlebars(
-      {'inputs/example.handlebars': source}, { foo: true })
+      {'inputs/example.handlebars': source}, { foo: true, trim: true })
     );
 
     assert.equal(typeof result, 'string', 'result is a string');
