@@ -22,7 +22,7 @@ exports['test handlebars'] = function (assert, cb) {
     assert.notEqual(result.indexOf('msgid "so let\'s test"'), -1, 'result contains the fourth string');
     assert.notEqual(result.indexOf('msgid "for \\"quotes\\""'), -1, 'result contains the fourth string');
     assert.notEqual(result.indexOf('msgid "I would like to do %1$s too"'), -1, 'result contains the sprintf string');
-    assert.notEqual(result.indexOf('msgid "blocky block\nblock"'), -1, 'result contains the block content');
+    assert.notEqual(result.indexOf('msgid "blocky block block"'), -1, 'result contains the block content');
     cb();
   });
 };
